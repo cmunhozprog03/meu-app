@@ -21,7 +21,7 @@ export default {
   },
   data(){
     return {
-      nome: 'Chris teste'
+      nome: 'Chris'
     }
   },
   methods:{

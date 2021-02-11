@@ -1,7 +1,7 @@
 <template>
   <div id="usuario">
 
-    <h2>Olá {{nome}}!</h2>
+    <h2>Olá PROP: {{nome.split('')}}!</h2>
 
   </div>
 </template>
@@ -9,7 +9,12 @@
 <script>
 export default {
   name: 'Usuario',
-  props: ['nome']
+  props: {
+    nome: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
