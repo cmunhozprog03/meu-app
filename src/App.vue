@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <h1>Bem-vindo ao meu primeiro projeto!</h1>
+    <button @click="entrar">Entrar</button>
     
-    <Usuario/>
+    <Usuario :nome="nome"/>
 
-    <h2>Olá eu sou um programador</h2>
+    
 
   </div>
 </template>
@@ -20,15 +21,18 @@ export default {
   },
   data(){
     return {
-      name: 'Sujeito Programador'
+      nome: 'Chris teste'
     }
   },
+  methods:{
+    entrar(){
+      this.nome = 'Curso VueJS';
+    }
+  }
  
 }
 </script>
 
 <style scoped>
-  h1{
-    color: brown;
-  }
+  
 </style>
